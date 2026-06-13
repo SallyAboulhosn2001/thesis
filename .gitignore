@@ -1,0 +1,69 @@
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual environments
+# =========================
+thesis_gpu/
+venv/
+env/
+.env/
+.venv/
+
+# =========================
+# Model checkpoints / feature files
+# =========================
+*.pth
+*.pt
+*.pkl
+*.joblib
+
+# =========================
+# Datasets
+# =========================
+datasets/
+data/
+
+# =========================
+# Generated figures / outputs
+# =========================
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+
+xai_cases/
+xai_cases*/
+gradcam*.png
+vit_attention*.png
+confusion_matrix*.png
+
+# =========================
+# Results / logs
+# =========================
+*.log
+*.csv
+results/
+outputs/
+runs/
+checkpoints/
+
+# =========================
+# IDE / OS files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+*.ipynb
