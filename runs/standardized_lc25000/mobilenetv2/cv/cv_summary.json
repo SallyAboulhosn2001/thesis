@@ -1,0 +1,283 @@
+{
+  "model": "mobilenetv2",
+  "n_splits": 5,
+  "folds": [
+    {
+      "model": "mobilenetv2",
+      "fold": 1,
+      "best_epoch": 6,
+      "best_val_loss": 0.0006941425245129384,
+      "final_validation_loss_at_best_checkpoint": 0.0006941425245129384,
+      "accuracy": 0.9997778271495223,
+      "precision_macro": 0.9997782705099778,
+      "recall_macro": 0.9997777777777778,
+      "f1_macro": 0.9997779008921268,
+      "mcc": 0.9997223455899116,
+      "fnr_macro": 0.00022222222222222223,
+      "confusion_matrix": [
+        [
+          900,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          900,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          899,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          900,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          901
+        ]
+      ],
+      "roc_auc_macro_ovr": 1.0
+    },
+    {
+      "model": "mobilenetv2",
+      "fold": 2,
+      "best_epoch": 19,
+      "best_val_loss": 3.3340691871057654e-05,
+      "final_validation_loss_at_best_checkpoint": 3.3340691871057654e-05,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "mcc": 1.0,
+      "fnr_macro": 0.0,
+      "confusion_matrix": [
+        [
+          900,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          900,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          900,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          900,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          900
+        ]
+      ],
+      "roc_auc_macro_ovr": 1.0
+    },
+    {
+      "model": "mobilenetv2",
+      "fold": 3,
+      "best_epoch": 8,
+      "best_val_loss": 0.0005323439240156505,
+      "final_validation_loss_at_best_checkpoint": 0.0005323439240156505,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "mcc": 1.0,
+      "fnr_macro": 0.0,
+      "confusion_matrix": [
+        [
+          900,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          900,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          900,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          900,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          900
+        ]
+      ],
+      "roc_auc_macro_ovr": 1.0
+    },
+    {
+      "model": "mobilenetv2",
+      "fold": 4,
+      "best_epoch": 6,
+      "best_val_loss": 0.001437314039230235,
+      "final_validation_loss_at_best_checkpoint": 0.001437314039230235,
+      "accuracy": 0.9995555555555555,
+      "precision_macro": 0.9995565410199557,
+      "recall_macro": 0.9995555555555555,
+      "f1_macro": 0.999555555006858,
+      "mcc": 0.9994446912209418,
+      "fnr_macro": 0.00044444444444444447,
+      "confusion_matrix": [
+        [
+          900,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          900,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          898,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          900,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          900
+        ]
+      ],
+      "roc_auc_macro_ovr": 1.0
+    },
+    {
+      "model": "mobilenetv2",
+      "fold": 5,
+      "best_epoch": 23,
+      "best_val_loss": 0.0001448866029692763,
+      "final_validation_loss_at_best_checkpoint": 0.0001448866029692763,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "mcc": 1.0,
+      "fnr_macro": 0.0,
+      "confusion_matrix": [
+        [
+          900,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          900,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          900,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          900,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          900
+        ]
+      ],
+      "roc_auc_macro_ovr": 1.0
+    }
+  ],
+  "best_epochs": [
+    6,
+    19,
+    8,
+    6,
+    23
+  ],
+  "median_best_epoch": 8,
+  "accuracy_mean": 0.9998666765410155,
+  "accuracy_std": 0.00019875607922090153,
+  "precision_macro_mean": 0.9998669623059868,
+  "precision_macro_std": 0.00019832088492235082,
+  "recall_macro_mean": 0.9998666666666667,
+  "recall_macro_std": 0.00019876159799999253,
+  "f1_macro_mean": 0.9998666911797971,
+  "f1_macro_std": 0.00019874805529075616,
+  "mcc_mean": 0.9998334073621706,
+  "mcc_std": 0.00024834163799390533,
+  "fnr_macro_mean": 0.00013333333333333334,
+  "fnr_macro_std": 0.0001987615979999813,
+  "roc_auc_macro_ovr_mean": 1.0,
+  "roc_auc_macro_ovr_std": 0.0
+}

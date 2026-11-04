@@ -1,0 +1,56 @@
+{
+  "model": "mobilenetv2",
+  "training_epochs": 8,
+  "cv_best_epochs": [
+    6,
+    19,
+    8,
+    6,
+    23
+  ],
+  "test_loss": 0.0016472362813497027,
+  "accuracy": 1.0,
+  "precision_macro": 1.0,
+  "recall_macro": 1.0,
+  "f1_macro": 1.0,
+  "mcc": 1.0,
+  "fnr_macro": 0.0,
+  "confusion_matrix": [
+    [
+      500,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      500,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      500,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      500,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      499
+    ]
+  ],
+  "roc_auc_macro_ovr": 1.0
+}

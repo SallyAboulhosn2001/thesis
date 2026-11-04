@@ -1,0 +1,51 @@
+{
+  "model": "mobilenetv2",
+  "fold": 5,
+  "best_epoch": 23,
+  "best_val_loss": 0.0001448866029692763,
+  "final_validation_loss_at_best_checkpoint": 0.0001448866029692763,
+  "accuracy": 1.0,
+  "precision_macro": 1.0,
+  "recall_macro": 1.0,
+  "f1_macro": 1.0,
+  "mcc": 1.0,
+  "fnr_macro": 0.0,
+  "confusion_matrix": [
+    [
+      900,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      900,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      900,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      900,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      900
+    ]
+  ],
+  "roc_auc_macro_ovr": 1.0
+}

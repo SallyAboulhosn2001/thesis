@@ -1,0 +1,167 @@
+{
+  "dataset_name": "nct",
+  "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+  "n_samples": 100000,
+  "class_names": [
+    "ADI",
+    "BACK",
+    "DEB",
+    "LYM",
+    "MUC",
+    "MUS",
+    "NORM",
+    "STR",
+    "TUM"
+  ],
+  "source": "resnet50",
+  "feature_dim": 2048,
+  "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\resnet50\\final\\final_model.pt",
+  "checkpoint_sha256": "9b5e7644dfc9d19f29c6bbeb21a83aadd2a83b0edb83cd2df50b226190d75db6",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "test_size": 0.2,
+  "logistic_regression": {
+    "max_iter": 3000,
+    "n_jobs": -1,
+    "scaling": "none"
+  },
+  "transform": {
+    "resize": [
+      224,
+      224
+    ],
+    "to_tensor": true,
+    "normalize_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalize_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "accuracy": {
+      "mean": 0.9630799999999999,
+      "std": 0.001575436447464631
+    },
+    "macro_precision": {
+      "mean": 0.9629970027495505,
+      "std": 0.0016167275658043353
+    },
+    "macro_recall": {
+      "mean": 0.9629620727597328,
+      "std": 0.0015827546435143794
+    },
+    "macro_f1": {
+      "mean": 0.9629496102599215,
+      "std": 0.0015927475321269547
+    },
+    "macro_ovr_auc": {
+      "mean": 0.9985782616936442,
+      "std": 0.00012748643608162852
+    },
+    "mcc": {
+      "mean": 0.9583396333939606,
+      "std": 0.0017773211122319036
+    },
+    "macro_fnr": {
+      "mean": 0.037037927240267235,
+      "std": 0.0015827546435143913
+    }
+  },
+  "per_seed": [
+    {
+      "source": "resnet50",
+      "seed": 1,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9649,
+      "macro_precision": 0.9647316491191616,
+      "macro_recall": 0.9650026098225203,
+      "macro_f1": 0.96485375657824,
+      "macro_ovr_auc": 0.9986845812007767,
+      "mcc": 0.9603910962351897,
+      "macro_fnr": 0.034997390177479624,
+      "max_n_iter": 1750,
+      "convergence_warning": false
+    },
+    {
+      "source": "resnet50",
+      "seed": 2,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9633,
+      "macro_precision": 0.963385011974972,
+      "macro_recall": 0.9628705253721789,
+      "macro_f1": 0.9630963065199231,
+      "macro_ovr_auc": 0.9986113121356591,
+      "mcc": 0.9585839017325628,
+      "macro_fnr": 0.037129474627821096,
+      "max_n_iter": 1779,
+      "convergence_warning": false
+    },
+    {
+      "source": "resnet50",
+      "seed": 3,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9629,
+      "macro_precision": 0.9627625369940763,
+      "macro_recall": 0.9626834241639286,
+      "macro_f1": 0.9626831562447475,
+      "macro_ovr_auc": 0.9985518157863077,
+      "mcc": 0.9581387114698553,
+      "macro_fnr": 0.03731657583607134,
+      "max_n_iter": 1706,
+      "convergence_warning": false
+    },
+    {
+      "source": "resnet50",
+      "seed": 4,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9606,
+      "macro_precision": 0.9604009274612569,
+      "macro_recall": 0.960647778845054,
+      "macro_f1": 0.9605022525149506,
+      "macro_ovr_auc": 0.9983709028692593,
+      "mcc": 0.9555411102656486,
+      "macro_fnr": 0.03935222115494592,
+      "max_n_iter": 1688,
+      "convergence_warning": false
+    },
+    {
+      "source": "resnet50",
+      "seed": 5,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9637,
+      "macro_precision": 0.9637048881982854,
+      "macro_recall": 0.9636060255949818,
+      "macro_f1": 0.9636125794417468,
+      "macro_ovr_auc": 0.998672696476218,
+      "mcc": 0.9590433472665468,
+      "macro_fnr": 0.0363939744050182,
+      "max_n_iter": 1750,
+      "convergence_warning": false
+    }
+  ],
+  "environment": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.5.1+cu118",
+    "torchvision": "0.20.1+cu118",
+    "sklearn": "1.7.2",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "cublas_workspace_config": ":4096:8"
+  }
+}

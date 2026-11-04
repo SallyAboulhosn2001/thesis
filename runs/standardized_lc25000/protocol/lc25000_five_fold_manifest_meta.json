@@ -1,0 +1,22 @@
+{
+  "protocol": "stratified_image_level_five_fold",
+  "n_splits": 5,
+  "seed": 42,
+  "dataset_signature": "a0ff93267549cf4b1e22c993237994b8bf4eb3f9f2208537df184a456dce36b7",
+  "num_samples": 22501,
+  "class_to_idx": {
+    "colon_aca": 0,
+    "colon_n": 1,
+    "lung_aca": 2,
+    "lung_n": 3,
+    "lung_scc": 4
+  },
+  "fold_counts": {
+    "1": 4501,
+    "2": 4500,
+    "3": 4500,
+    "4": 4500,
+    "5": 4500
+  },
+  "lineage_limit": "LC25000 contains offline-augmented derivatives; reliable source-image lineage IDs are not available. This manifest guarantees exact file-level disjointness between train/validation folds, not source-lineage grouping."
+}

@@ -1,0 +1,167 @@
+{
+  "dataset_name": "nct",
+  "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+  "n_samples": 100000,
+  "class_names": [
+    "ADI",
+    "BACK",
+    "DEB",
+    "LYM",
+    "MUC",
+    "MUS",
+    "NORM",
+    "STR",
+    "TUM"
+  ],
+  "source": "vit_b16",
+  "feature_dim": 768,
+  "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\vit_b16\\final\\final_model.pt",
+  "checkpoint_sha256": "2d1f19b63238471ec2a1f1332986a682ef967b352b3f936020a4ded3593dca4f",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "test_size": 0.2,
+  "logistic_regression": {
+    "max_iter": 3000,
+    "n_jobs": -1,
+    "scaling": "none"
+  },
+  "transform": {
+    "resize": [
+      224,
+      224
+    ],
+    "to_tensor": true,
+    "normalize_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalize_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "accuracy": {
+      "mean": 0.9663,
+      "std": 0.0018017352746727546
+    },
+    "macro_precision": {
+      "mean": 0.9659195209044237,
+      "std": 0.001993536882435328
+    },
+    "macro_recall": {
+      "mean": 0.9659104356836871,
+      "std": 0.001724802708597316
+    },
+    "macro_f1": {
+      "mean": 0.9659002561290162,
+      "std": 0.001850353183506235
+    },
+    "macro_ovr_auc": {
+      "mean": 0.9986702298274551,
+      "std": 7.613502115126244e-05
+    },
+    "mcc": {
+      "mean": 0.9619703421574197,
+      "std": 0.0020327015093631476
+    },
+    "macro_fnr": {
+      "mean": 0.03408956431631298,
+      "std": 0.0017248027085973068
+    }
+  },
+  "per_seed": [
+    {
+      "source": "vit_b16",
+      "seed": 1,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.96725,
+      "macro_precision": 0.9667924354914967,
+      "macro_recall": 0.9669050903947078,
+      "macro_f1": 0.9668464266145086,
+      "macro_ovr_auc": 0.998689944138764,
+      "mcc": 0.9630402177117472,
+      "macro_fnr": 0.033094909605292294,
+      "max_n_iter": 596,
+      "convergence_warning": false
+    },
+    {
+      "source": "vit_b16",
+      "seed": 2,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.96775,
+      "macro_precision": 0.9675021681280798,
+      "macro_recall": 0.9671397579118296,
+      "macro_f1": 0.9672936033610802,
+      "macro_ovr_auc": 0.9987163270432313,
+      "mcc": 0.963606760671355,
+      "macro_fnr": 0.032860242088170406,
+      "max_n_iter": 604,
+      "convergence_warning": false
+    },
+    {
+      "source": "vit_b16",
+      "seed": 3,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9669,
+      "macro_precision": 0.966638399490813,
+      "macro_recall": 0.9662676008744734,
+      "macro_f1": 0.9664322541526498,
+      "macro_ovr_auc": 0.9986323523918406,
+      "mcc": 0.9626468564807267,
+      "macro_fnr": 0.0337323991255266,
+      "max_n_iter": 573,
+      "convergence_warning": false
+    },
+    {
+      "source": "vit_b16",
+      "seed": 4,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9632,
+      "macro_precision": 0.9624515185871368,
+      "macro_recall": 0.9628964244429928,
+      "macro_f1": 0.9626682870660738,
+      "macro_ovr_auc": 0.9985591862615202,
+      "mcc": 0.9584726109544882,
+      "macro_fnr": 0.0371035755570072,
+      "max_n_iter": 575,
+      "convergence_warning": false
+    },
+    {
+      "source": "vit_b16",
+      "seed": 5,
+      "n_train": 80000,
+      "n_test": 20000,
+      "accuracy": 0.9664,
+      "macro_precision": 0.9662130828245916,
+      "macro_recall": 0.9663433047944316,
+      "macro_f1": 0.9662607094507687,
+      "macro_ovr_auc": 0.99875333930192,
+      "mcc": 0.9620852649687808,
+      "macro_fnr": 0.03365669520556841,
+      "max_n_iter": 585,
+      "convergence_warning": false
+    }
+  ],
+  "environment": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.5.1+cu118",
+    "torchvision": "0.20.1+cu118",
+    "sklearn": "1.7.2",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "cublas_workspace_config": ":4096:8"
+  }
+}

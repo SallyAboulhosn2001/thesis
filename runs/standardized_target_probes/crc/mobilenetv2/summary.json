@@ -1,0 +1,167 @@
+{
+  "dataset_name": "crc",
+  "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\CRC-VAL-HE-7K\\CRC-VAL-HE-7K",
+  "n_samples": 7180,
+  "class_names": [
+    "ADI",
+    "BACK",
+    "DEB",
+    "LYM",
+    "MUC",
+    "MUS",
+    "NORM",
+    "STR",
+    "TUM"
+  ],
+  "source": "mobilenetv2",
+  "feature_dim": 1280,
+  "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\mobilenetv2\\final\\final_model.pt",
+  "checkpoint_sha256": "ac4d79ab50869ac940eeacceb11defc6a3164a8a3048bcfaf517e3674f5b44b5",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "test_size": 0.2,
+  "logistic_regression": {
+    "max_iter": 3000,
+    "n_jobs": -1,
+    "scaling": "none"
+  },
+  "transform": {
+    "resize": [
+      224,
+      224
+    ],
+    "to_tensor": true,
+    "normalize_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalize_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "metrics": {
+    "accuracy": {
+      "mean": 0.9740947075208913,
+      "std": 0.0015097133279024595
+    },
+    "macro_precision": {
+      "mean": 0.9700611900778041,
+      "std": 0.002784178579201239
+    },
+    "macro_recall": {
+      "mean": 0.9692521352953062,
+      "std": 0.002200288486723353
+    },
+    "macro_f1": {
+      "mean": 0.9695745481196063,
+      "std": 0.0023256691113490535
+    },
+    "macro_ovr_auc": {
+      "mean": 0.9991756267585874,
+      "std": 0.0001965747878707629
+    },
+    "mcc": {
+      "mean": 0.9702426036303493,
+      "std": 0.001742121335528676
+    },
+    "macro_fnr": {
+      "mean": 0.030747864704693872,
+      "std": 0.0022002884867233525
+    }
+  },
+  "per_seed": [
+    {
+      "source": "mobilenetv2",
+      "seed": 1,
+      "n_train": 5744,
+      "n_test": 1436,
+      "accuracy": 0.9728412256267409,
+      "macro_precision": 0.9698002174412422,
+      "macro_recall": 0.9688362776005436,
+      "macro_f1": 0.969269914496961,
+      "macro_ovr_auc": 0.9991859958308767,
+      "mcc": 0.9687914704458542,
+      "macro_fnr": 0.03116372239945644,
+      "max_n_iter": 529,
+      "convergence_warning": false
+    },
+    {
+      "source": "mobilenetv2",
+      "seed": 2,
+      "n_train": 5744,
+      "n_test": 1436,
+      "accuracy": 0.9756267409470752,
+      "macro_precision": 0.9701355467170352,
+      "macro_recall": 0.9697831192966306,
+      "macro_f1": 0.9698287283810016,
+      "macro_ovr_auc": 0.999363353956915,
+      "mcc": 0.9720191959623236,
+      "macro_fnr": 0.030216880703369364,
+      "max_n_iter": 517,
+      "convergence_warning": false
+    },
+    {
+      "source": "mobilenetv2",
+      "seed": 3,
+      "n_train": 5744,
+      "n_test": 1436,
+      "accuracy": 0.9749303621169917,
+      "macro_precision": 0.9717353302982572,
+      "macro_recall": 0.9722715662973973,
+      "macro_f1": 0.9719458477844403,
+      "macro_ovr_auc": 0.998986563059913,
+      "mcc": 0.971193226771946,
+      "macro_fnr": 0.027728433702602737,
+      "max_n_iter": 517,
+      "convergence_warning": false
+    },
+    {
+      "source": "mobilenetv2",
+      "seed": 4,
+      "n_train": 5744,
+      "n_test": 1436,
+      "accuracy": 0.9721448467966574,
+      "macro_precision": 0.9656415705028901,
+      "macro_recall": 0.9661227254476624,
+      "macro_f1": 0.9658488460229692,
+      "macro_ovr_auc": 0.9989668658956758,
+      "mcc": 0.967998324365846,
+      "macro_fnr": 0.03387727455233761,
+      "max_n_iter": 561,
+      "convergence_warning": false
+    },
+    {
+      "source": "mobilenetv2",
+      "seed": 5,
+      "n_train": 5744,
+      "n_test": 1436,
+      "accuracy": 0.9749303621169917,
+      "macro_precision": 0.9729932854295958,
+      "macro_recall": 0.9692469878342967,
+      "macro_f1": 0.9709794039126596,
+      "macro_ovr_auc": 0.999375355049557,
+      "mcc": 0.9712108006057761,
+      "macro_fnr": 0.03075301216570321,
+      "max_n_iter": 516,
+      "convergence_warning": false
+    }
+  ],
+  "environment": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.5.1+cu118",
+    "torchvision": "0.20.1+cu118",
+    "sklearn": "1.7.2",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "cublas_workspace_config": ":4096:8"
+  }
+}

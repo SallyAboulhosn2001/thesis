@@ -1,0 +1,1004 @@
+{
+  "densenet121": {
+    "dataset_name": "nct",
+    "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+    "n_samples": 100000,
+    "class_names": [
+      "ADI",
+      "BACK",
+      "DEB",
+      "LYM",
+      "MUC",
+      "MUS",
+      "NORM",
+      "STR",
+      "TUM"
+    ],
+    "source": "densenet121",
+    "feature_dim": 1024,
+    "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\densenet121\\final\\final_model.pt",
+    "checkpoint_sha256": "cd547e1ac580979985fd6912b2a1e69b8ece1d45e641ba8416b896c07404f6c7",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_size": 0.2,
+    "logistic_regression": {
+      "max_iter": 3000,
+      "n_jobs": -1,
+      "scaling": "none"
+    },
+    "transform": {
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalize_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "metrics": {
+      "accuracy": {
+        "mean": 0.9730399999999999,
+        "std": 0.0007083431371870764
+      },
+      "macro_precision": {
+        "mean": 0.9729549977600243,
+        "std": 0.0008752233563307786
+      },
+      "macro_recall": {
+        "mean": 0.9729019875382303,
+        "std": 0.000760939542266448
+      },
+      "macro_f1": {
+        "mean": 0.9729148084257403,
+        "std": 0.000797218583053916
+      },
+      "macro_ovr_auc": {
+        "mean": 0.9992441359766792,
+        "std": 4.8858017755103e-05
+      },
+      "mcc": {
+        "mean": 0.969576691212738,
+        "std": 0.0008002540845236277
+      },
+      "macro_fnr": {
+        "mean": 0.027098012461769776,
+        "std": 0.0007609395422664238
+      }
+    },
+    "per_seed": [
+      {
+        "source": "densenet121",
+        "seed": 1,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.97355,
+        "macro_precision": 0.9737037195092751,
+        "macro_recall": 0.9732349351511256,
+        "macro_f1": 0.9734488573538527,
+        "macro_ovr_auc": 0.999317530395103,
+        "mcc": 0.9701520616474163,
+        "macro_fnr": 0.026765064848874226,
+        "max_n_iter": 1349,
+        "convergence_warning": false
+      },
+      {
+        "source": "densenet121",
+        "seed": 2,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.97355,
+        "macro_precision": 0.973690332347743,
+        "macro_recall": 0.9733667245743717,
+        "macro_f1": 0.9735205178258874,
+        "macro_ovr_auc": 0.9992165146269048,
+        "mcc": 0.9701494064688468,
+        "macro_fnr": 0.026633275425628444,
+        "max_n_iter": 1291,
+        "convergence_warning": false
+      },
+      {
+        "source": "densenet121",
+        "seed": 3,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9728,
+        "macro_precision": 0.9725945032085944,
+        "macro_recall": 0.9727880917110774,
+        "macro_f1": 0.9726785028488167,
+        "macro_ovr_auc": 0.9992373534709483,
+        "mcc": 0.9693065891128936,
+        "macro_fnr": 0.027211908288922684,
+        "max_n_iter": 1377,
+        "convergence_warning": false
+      },
+      {
+        "source": "densenet121",
+        "seed": 4,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9719,
+        "macro_precision": 0.9716181005483714,
+        "macro_recall": 0.9716266785660308,
+        "macro_f1": 0.9716186343077615,
+        "macro_ovr_auc": 0.9991886364621746,
+        "mcc": 0.9682879377565103,
+        "macro_fnr": 0.028373321433969163,
+        "max_n_iter": 1305,
+        "convergence_warning": false
+      },
+      {
+        "source": "densenet121",
+        "seed": 5,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9734,
+        "macro_precision": 0.9731683331861376,
+        "macro_recall": 0.9734935076885457,
+        "macro_f1": 0.9733075297923836,
+        "macro_ovr_auc": 0.9992606449282653,
+        "mcc": 0.9699874610780229,
+        "macro_fnr": 0.02650649231145437,
+        "max_n_iter": 1219,
+        "convergence_warning": false
+      }
+    ],
+    "environment": {
+      "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "sklearn": "1.7.2",
+      "numpy": "2.2.6",
+      "device": "cuda",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "cublas_workspace_config": ":4096:8"
+    }
+  },
+  "efficientnet_b3": {
+    "dataset_name": "nct",
+    "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+    "n_samples": 100000,
+    "class_names": [
+      "ADI",
+      "BACK",
+      "DEB",
+      "LYM",
+      "MUC",
+      "MUS",
+      "NORM",
+      "STR",
+      "TUM"
+    ],
+    "source": "efficientnet_b3",
+    "feature_dim": 1536,
+    "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\efficientnet_b3\\final\\final_model.pt",
+    "checkpoint_sha256": "d2e0be2f8d536dc955cd5419d8eb89ad2c956629e7b7a2b7f085d9823515c1ee",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_size": 0.2,
+    "logistic_regression": {
+      "max_iter": 3000,
+      "n_jobs": -1,
+      "scaling": "none"
+    },
+    "transform": {
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalize_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "metrics": {
+      "accuracy": {
+        "mean": 0.9622399999999999,
+        "std": 0.0010824740181639536
+      },
+      "macro_precision": {
+        "mean": 0.9627491372777246,
+        "std": 0.001270882964827775
+      },
+      "macro_recall": {
+        "mean": 0.9623598622176642,
+        "std": 0.0010486765855323584
+      },
+      "macro_f1": {
+        "mean": 0.9625319031276899,
+        "std": 0.0011421869670938745
+      },
+      "macro_ovr_auc": {
+        "mean": 0.9983683217738862,
+        "std": 6.534916286311628e-05
+      },
+      "mcc": {
+        "mean": 0.9573884857257886,
+        "std": 0.001221827831427679
+      },
+      "macro_fnr": {
+        "mean": 0.0376401377823357,
+        "std": 0.00104867658553232
+      }
+    },
+    "per_seed": [
+      {
+        "source": "efficientnet_b3",
+        "seed": 1,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9629,
+        "macro_precision": 0.9636215331925168,
+        "macro_recall": 0.9627846570602823,
+        "macro_f1": 0.9631731891499974,
+        "macro_ovr_auc": 0.998424639752694,
+        "mcc": 0.9581324481516204,
+        "macro_fnr": 0.037215342939717753,
+        "max_n_iter": 652,
+        "convergence_warning": false
+      },
+      {
+        "source": "efficientnet_b3",
+        "seed": 2,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9618,
+        "macro_precision": 0.962241567717101,
+        "macro_recall": 0.9619639322549912,
+        "macro_f1": 0.9620966797347233,
+        "macro_ovr_auc": 0.9983398578453202,
+        "mcc": 0.9568879637608607,
+        "macro_fnr": 0.03803606774500875,
+        "max_n_iter": 641,
+        "convergence_warning": false
+      },
+      {
+        "source": "efficientnet_b3",
+        "seed": 3,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.961,
+        "macro_precision": 0.9613946080144457,
+        "macro_recall": 0.9610251531969118,
+        "macro_f1": 0.9611964196191403,
+        "macro_ovr_auc": 0.998305927335765,
+        "mcc": 0.9559866166210478,
+        "macro_fnr": 0.03897484680308806,
+        "max_n_iter": 640,
+        "convergence_warning": false
+      },
+      {
+        "source": "efficientnet_b3",
+        "seed": 4,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.96175,
+        "macro_precision": 0.9619955162454161,
+        "macro_recall": 0.9621679125521223,
+        "macro_f1": 0.962048666730808,
+        "macro_ovr_auc": 0.9983199773456932,
+        "mcc": 0.9568427033317286,
+        "macro_fnr": 0.037832087447877596,
+        "max_n_iter": 629,
+        "convergence_warning": false
+      },
+      {
+        "source": "efficientnet_b3",
+        "seed": 5,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.96375,
+        "macro_precision": 0.9644924612191432,
+        "macro_recall": 0.9638576560240136,
+        "macro_f1": 0.9641445604037795,
+        "macro_ovr_auc": 0.9984512065899592,
+        "mcc": 0.9590926967636849,
+        "macro_fnr": 0.03614234397598636,
+        "max_n_iter": 631,
+        "convergence_warning": false
+      }
+    ],
+    "environment": {
+      "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "sklearn": "1.7.2",
+      "numpy": "2.2.6",
+      "device": "cuda",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "cublas_workspace_config": ":4096:8"
+    }
+  },
+  "resnet50": {
+    "dataset_name": "nct",
+    "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+    "n_samples": 100000,
+    "class_names": [
+      "ADI",
+      "BACK",
+      "DEB",
+      "LYM",
+      "MUC",
+      "MUS",
+      "NORM",
+      "STR",
+      "TUM"
+    ],
+    "source": "resnet50",
+    "feature_dim": 2048,
+    "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\resnet50\\final\\final_model.pt",
+    "checkpoint_sha256": "9b5e7644dfc9d19f29c6bbeb21a83aadd2a83b0edb83cd2df50b226190d75db6",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_size": 0.2,
+    "logistic_regression": {
+      "max_iter": 3000,
+      "n_jobs": -1,
+      "scaling": "none"
+    },
+    "transform": {
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalize_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "metrics": {
+      "accuracy": {
+        "mean": 0.9630799999999999,
+        "std": 0.001575436447464631
+      },
+      "macro_precision": {
+        "mean": 0.9629970027495505,
+        "std": 0.0016167275658043353
+      },
+      "macro_recall": {
+        "mean": 0.9629620727597328,
+        "std": 0.0015827546435143794
+      },
+      "macro_f1": {
+        "mean": 0.9629496102599215,
+        "std": 0.0015927475321269547
+      },
+      "macro_ovr_auc": {
+        "mean": 0.9985782616936442,
+        "std": 0.00012748643608162852
+      },
+      "mcc": {
+        "mean": 0.9583396333939606,
+        "std": 0.0017773211122319036
+      },
+      "macro_fnr": {
+        "mean": 0.037037927240267235,
+        "std": 0.0015827546435143913
+      }
+    },
+    "per_seed": [
+      {
+        "source": "resnet50",
+        "seed": 1,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9649,
+        "macro_precision": 0.9647316491191616,
+        "macro_recall": 0.9650026098225203,
+        "macro_f1": 0.96485375657824,
+        "macro_ovr_auc": 0.9986845812007767,
+        "mcc": 0.9603910962351897,
+        "macro_fnr": 0.034997390177479624,
+        "max_n_iter": 1750,
+        "convergence_warning": false
+      },
+      {
+        "source": "resnet50",
+        "seed": 2,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9633,
+        "macro_precision": 0.963385011974972,
+        "macro_recall": 0.9628705253721789,
+        "macro_f1": 0.9630963065199231,
+        "macro_ovr_auc": 0.9986113121356591,
+        "mcc": 0.9585839017325628,
+        "macro_fnr": 0.037129474627821096,
+        "max_n_iter": 1779,
+        "convergence_warning": false
+      },
+      {
+        "source": "resnet50",
+        "seed": 3,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9629,
+        "macro_precision": 0.9627625369940763,
+        "macro_recall": 0.9626834241639286,
+        "macro_f1": 0.9626831562447475,
+        "macro_ovr_auc": 0.9985518157863077,
+        "mcc": 0.9581387114698553,
+        "macro_fnr": 0.03731657583607134,
+        "max_n_iter": 1706,
+        "convergence_warning": false
+      },
+      {
+        "source": "resnet50",
+        "seed": 4,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9606,
+        "macro_precision": 0.9604009274612569,
+        "macro_recall": 0.960647778845054,
+        "macro_f1": 0.9605022525149506,
+        "macro_ovr_auc": 0.9983709028692593,
+        "mcc": 0.9555411102656486,
+        "macro_fnr": 0.03935222115494592,
+        "max_n_iter": 1688,
+        "convergence_warning": false
+      },
+      {
+        "source": "resnet50",
+        "seed": 5,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9637,
+        "macro_precision": 0.9637048881982854,
+        "macro_recall": 0.9636060255949818,
+        "macro_f1": 0.9636125794417468,
+        "macro_ovr_auc": 0.998672696476218,
+        "mcc": 0.9590433472665468,
+        "macro_fnr": 0.0363939744050182,
+        "max_n_iter": 1750,
+        "convergence_warning": false
+      }
+    ],
+    "environment": {
+      "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "sklearn": "1.7.2",
+      "numpy": "2.2.6",
+      "device": "cuda",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "cublas_workspace_config": ":4096:8"
+    }
+  },
+  "mobilenetv2": {
+    "dataset_name": "nct",
+    "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+    "n_samples": 100000,
+    "class_names": [
+      "ADI",
+      "BACK",
+      "DEB",
+      "LYM",
+      "MUC",
+      "MUS",
+      "NORM",
+      "STR",
+      "TUM"
+    ],
+    "source": "mobilenetv2",
+    "feature_dim": 1280,
+    "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\mobilenetv2\\final\\final_model.pt",
+    "checkpoint_sha256": "ac4d79ab50869ac940eeacceb11defc6a3164a8a3048bcfaf517e3674f5b44b5",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_size": 0.2,
+    "logistic_regression": {
+      "max_iter": 3000,
+      "n_jobs": -1,
+      "scaling": "none"
+    },
+    "transform": {
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalize_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "metrics": {
+      "accuracy": {
+        "mean": 0.9572099999999999,
+        "std": 0.001831461165299426
+      },
+      "macro_precision": {
+        "mean": 0.9576767978055211,
+        "std": 0.0018569234801379553
+      },
+      "macro_recall": {
+        "mean": 0.9572975973106118,
+        "std": 0.0018601777061441507
+      },
+      "macro_f1": {
+        "mean": 0.9574660190909665,
+        "std": 0.0018649103954425192
+      },
+      "macro_ovr_auc": {
+        "mean": 0.9981868712470522,
+        "std": 0.00011515560056606205
+      },
+      "mcc": {
+        "mean": 0.9517113110971451,
+        "std": 0.0020643706224549594
+      },
+      "macro_fnr": {
+        "mean": 0.04270240268938837,
+        "std": 0.0018601777061441243
+      }
+    },
+    "per_seed": [
+      {
+        "source": "mobilenetv2",
+        "seed": 1,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.95915,
+        "macro_precision": 0.9596173773553703,
+        "macro_recall": 0.9591724509205961,
+        "macro_f1": 0.9593820352715999,
+        "macro_ovr_auc": 0.9982602282944162,
+        "mcc": 0.9538975030734709,
+        "macro_fnr": 0.040827549079403926,
+        "max_n_iter": 1531,
+        "convergence_warning": false
+      },
+      {
+        "source": "mobilenetv2",
+        "seed": 2,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.95675,
+        "macro_precision": 0.9569336018321278,
+        "macro_recall": 0.9566209524717897,
+        "macro_f1": 0.9567530891864853,
+        "macro_ovr_auc": 0.9981660294079193,
+        "mcc": 0.9511935486790112,
+        "macro_fnr": 0.043379047528210375,
+        "max_n_iter": 1384,
+        "convergence_warning": false
+      },
+      {
+        "source": "mobilenetv2",
+        "seed": 3,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9573,
+        "macro_precision": 0.9579908731638375,
+        "macro_recall": 0.9573845938929095,
+        "macro_f1": 0.9576593434777045,
+        "macro_ovr_auc": 0.998263120881787,
+        "mcc": 0.9518129489235551,
+        "macro_fnr": 0.04261540610709058,
+        "max_n_iter": 1449,
+        "convergence_warning": false
+      },
+      {
+        "source": "mobilenetv2",
+        "seed": 4,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9544,
+        "macro_precision": 0.9548920818160338,
+        "macro_recall": 0.9545295916966301,
+        "macro_f1": 0.9546797739621584,
+        "macro_ovr_auc": 0.9979937965345778,
+        "mcc": 0.9485435059020801,
+        "macro_fnr": 0.04547040830336985,
+        "max_n_iter": 1497,
+        "convergence_warning": false
+      },
+      {
+        "source": "mobilenetv2",
+        "seed": 5,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.95845,
+        "macro_precision": 0.9589500548602362,
+        "macro_recall": 0.9587803975711329,
+        "macro_f1": 0.9588558535568836,
+        "macro_ovr_auc": 0.998251181116561,
+        "mcc": 0.9531090489076086,
+        "macro_fnr": 0.04121960242886714,
+        "max_n_iter": 1660,
+        "convergence_warning": false
+      }
+    ],
+    "environment": {
+      "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "sklearn": "1.7.2",
+      "numpy": "2.2.6",
+      "device": "cuda",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "cublas_workspace_config": ":4096:8"
+    }
+  },
+  "vit_b16": {
+    "dataset_name": "nct",
+    "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+    "n_samples": 100000,
+    "class_names": [
+      "ADI",
+      "BACK",
+      "DEB",
+      "LYM",
+      "MUC",
+      "MUS",
+      "NORM",
+      "STR",
+      "TUM"
+    ],
+    "source": "vit_b16",
+    "feature_dim": 768,
+    "checkpoint": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000\\vit_b16\\final\\final_model.pt",
+    "checkpoint_sha256": "2d1f19b63238471ec2a1f1332986a682ef967b352b3f936020a4ded3593dca4f",
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_size": 0.2,
+    "logistic_regression": {
+      "max_iter": 3000,
+      "n_jobs": -1,
+      "scaling": "none"
+    },
+    "transform": {
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalize_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "metrics": {
+      "accuracy": {
+        "mean": 0.9663,
+        "std": 0.0018017352746727546
+      },
+      "macro_precision": {
+        "mean": 0.9659195209044237,
+        "std": 0.001993536882435328
+      },
+      "macro_recall": {
+        "mean": 0.9659104356836871,
+        "std": 0.001724802708597316
+      },
+      "macro_f1": {
+        "mean": 0.9659002561290162,
+        "std": 0.001850353183506235
+      },
+      "macro_ovr_auc": {
+        "mean": 0.9986702298274551,
+        "std": 7.613502115126244e-05
+      },
+      "mcc": {
+        "mean": 0.9619703421574197,
+        "std": 0.0020327015093631476
+      },
+      "macro_fnr": {
+        "mean": 0.03408956431631298,
+        "std": 0.0017248027085973068
+      }
+    },
+    "per_seed": [
+      {
+        "source": "vit_b16",
+        "seed": 1,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.96725,
+        "macro_precision": 0.9667924354914967,
+        "macro_recall": 0.9669050903947078,
+        "macro_f1": 0.9668464266145086,
+        "macro_ovr_auc": 0.998689944138764,
+        "mcc": 0.9630402177117472,
+        "macro_fnr": 0.033094909605292294,
+        "max_n_iter": 596,
+        "convergence_warning": false
+      },
+      {
+        "source": "vit_b16",
+        "seed": 2,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.96775,
+        "macro_precision": 0.9675021681280798,
+        "macro_recall": 0.9671397579118296,
+        "macro_f1": 0.9672936033610802,
+        "macro_ovr_auc": 0.9987163270432313,
+        "mcc": 0.963606760671355,
+        "macro_fnr": 0.032860242088170406,
+        "max_n_iter": 604,
+        "convergence_warning": false
+      },
+      {
+        "source": "vit_b16",
+        "seed": 3,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9669,
+        "macro_precision": 0.966638399490813,
+        "macro_recall": 0.9662676008744734,
+        "macro_f1": 0.9664322541526498,
+        "macro_ovr_auc": 0.9986323523918406,
+        "mcc": 0.9626468564807267,
+        "macro_fnr": 0.0337323991255266,
+        "max_n_iter": 573,
+        "convergence_warning": false
+      },
+      {
+        "source": "vit_b16",
+        "seed": 4,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9632,
+        "macro_precision": 0.9624515185871368,
+        "macro_recall": 0.9628964244429928,
+        "macro_f1": 0.9626682870660738,
+        "macro_ovr_auc": 0.9985591862615202,
+        "mcc": 0.9584726109544882,
+        "macro_fnr": 0.0371035755570072,
+        "max_n_iter": 575,
+        "convergence_warning": false
+      },
+      {
+        "source": "vit_b16",
+        "seed": 5,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9664,
+        "macro_precision": 0.9662130828245916,
+        "macro_recall": 0.9663433047944316,
+        "macro_f1": 0.9662607094507687,
+        "macro_ovr_auc": 0.99875333930192,
+        "mcc": 0.9620852649687808,
+        "macro_fnr": 0.03365669520556841,
+        "max_n_iter": 585,
+        "convergence_warning": false
+      }
+    ],
+    "environment": {
+      "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "sklearn": "1.7.2",
+      "numpy": "2.2.6",
+      "device": "cuda",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "cublas_workspace_config": ":4096:8"
+    }
+  },
+  "imagenet_densenet121": {
+    "dataset_name": "nct",
+    "dataset_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\NCT-CRC-HE-100K-NONORM\\NCT-CRC-HE-100K-NONORM",
+    "n_samples": 100000,
+    "class_names": [
+      "ADI",
+      "BACK",
+      "DEB",
+      "LYM",
+      "MUC",
+      "MUS",
+      "NORM",
+      "STR",
+      "TUM"
+    ],
+    "source": "imagenet_densenet121",
+    "feature_dim": 1024,
+    "checkpoint": "torchvision DenseNet121 IMAGENET1K_V1",
+    "checkpoint_sha256": null,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "test_size": 0.2,
+    "logistic_regression": {
+      "max_iter": 3000,
+      "n_jobs": -1,
+      "scaling": "none"
+    },
+    "transform": {
+      "resize": [
+        224,
+        224
+      ],
+      "to_tensor": true,
+      "normalize_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "normalize_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "metrics": {
+      "accuracy": {
+        "mean": 0.9740800000000001,
+        "std": 0.0005007494383421588
+      },
+      "macro_precision": {
+        "mean": 0.9738318321321463,
+        "std": 0.0006192799754798788
+      },
+      "macro_recall": {
+        "mean": 0.9739279175897119,
+        "std": 0.00031355271450529226
+      },
+      "macro_f1": {
+        "mean": 0.9738685715078802,
+        "std": 0.0004640206603051019
+      },
+      "macro_ovr_auc": {
+        "mean": 0.9992526581576449,
+        "std": 4.3157708002441824e-05
+      },
+      "mcc": {
+        "mean": 0.9707505000394908,
+        "std": 0.0005634425582755422
+      },
+      "macro_fnr": {
+        "mean": 0.02607208241028807,
+        "std": 0.00031355271450527134
+      }
+    },
+    "per_seed": [
+      {
+        "source": "imagenet_densenet121",
+        "seed": 1,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.974,
+        "macro_precision": 0.9739891533896707,
+        "macro_recall": 0.9738732562440203,
+        "macro_f1": 0.9739245951692228,
+        "macro_ovr_auc": 0.9992565193993962,
+        "mcc": 0.9706581084696339,
+        "macro_fnr": 0.026126743755979773,
+        "max_n_iter": 546,
+        "convergence_warning": false
+      },
+      {
+        "source": "imagenet_densenet121",
+        "seed": 2,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.97485,
+        "macro_precision": 0.9746552078859487,
+        "macro_recall": 0.9743654848305129,
+        "macro_f1": 0.9745045104371184,
+        "macro_ovr_auc": 0.9993216396600315,
+        "mcc": 0.9716163911506889,
+        "macro_fnr": 0.025634515169487095,
+        "max_n_iter": 585,
+        "convergence_warning": false
+      },
+      {
+        "source": "imagenet_densenet121",
+        "seed": 3,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.974,
+        "macro_precision": 0.9737224665204474,
+        "macro_recall": 0.9739785533883063,
+        "macro_f1": 0.9738339606614314,
+        "macro_ovr_auc": 0.9992086231762376,
+        "mcc": 0.9706619990626448,
+        "macro_fnr": 0.026021446611693692,
+        "max_n_iter": 591,
+        "convergence_warning": false
+      },
+      {
+        "source": "imagenet_densenet121",
+        "seed": 4,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.97345,
+        "macro_precision": 0.9729272511408928,
+        "macro_recall": 0.9734850216867843,
+        "macro_f1": 0.9731960569003869,
+        "macro_ovr_auc": 0.9992255465818308,
+        "mcc": 0.970041174839614,
+        "macro_fnr": 0.026514978313215604,
+        "max_n_iter": 590,
+        "convergence_warning": false
+      },
+      {
+        "source": "imagenet_densenet121",
+        "seed": 5,
+        "n_train": 80000,
+        "n_test": 20000,
+        "accuracy": 0.9741,
+        "macro_precision": 0.9738650817237722,
+        "macro_recall": 0.9739372717989357,
+        "macro_f1": 0.9738837343712419,
+        "macro_ovr_auc": 0.9992509619707283,
+        "mcc": 0.9707748266748727,
+        "macro_fnr": 0.026062728201064204,
+        "max_n_iter": 579,
+        "convergence_warning": false
+      }
+    ],
+    "environment": {
+      "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "sklearn": "1.7.2",
+      "numpy": "2.2.6",
+      "device": "cuda",
+      "gpu": "NVIDIA GeForce RTX 4070",
+      "cublas_workspace_config": ":4096:8"
+    }
+  }
+}

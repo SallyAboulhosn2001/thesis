@@ -1,0 +1,62 @@
+{
+  "protocol_name": "standardized_lc25000_v1",
+  "mode": "cv",
+  "model": "mobilenetv2",
+  "data_root": "C:\\Users\\sally\\Desktop\\thesis_code\\datasets\\LC25000\\lung_colon_image_set",
+  "out_dir": "C:\\Users\\sally\\Desktop\\thesis_code\\runs\\standardized_lc25000",
+  "image_size": 224,
+  "batch_size": 16,
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "loss": "CrossEntropyLoss",
+  "max_epochs": 50,
+  "early_stopping_patience": 7,
+  "checkpoint_criterion": "minimum_validation_loss",
+  "n_splits": 5,
+  "splitter": "StratifiedKFold(shuffle=True, random_state=42)",
+  "seed": 42,
+  "stain_normalization": false,
+  "train_augmentation": [
+    "RandomHorizontalFlip(p=0.5)",
+    "RandomVerticalFlip(p=0.5)",
+    "RandomRotation(15 degrees)"
+  ],
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "pretraining": "ImageNet-1K V1",
+  "amp": false,
+  "class_to_idx": {
+    "colon_aca": 0,
+    "colon_n": 1,
+    "lung_aca": 2,
+    "lung_n": 3,
+    "lung_scc": 4
+  },
+  "environment": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.5.1+cu118",
+    "torchvision": "0.20.1+cu118",
+    "sklearn": "1.7.2",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cuda_available": true,
+    "cuda_runtime": "11.8",
+    "gpu_name": "NVIDIA GeForce RTX 4070",
+    "gpu_capability": [
+      8,
+      9
+    ]
+  },
+  "interpretation_boundary": "LC25000 cross-validation is stratified at image-file level. Because reliable source-image lineage IDs for offline-augmented derivatives are unavailable, source-grouped independence cannot be guaranteed."
+}
